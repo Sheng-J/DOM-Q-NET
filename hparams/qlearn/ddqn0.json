@@ -1,0 +1,17 @@
+{
+    "opt_type": "adam",
+    "lr": 0.0002,
+    "batch_size": 128,
+    "gamma": 0.99,
+    "eps_decay_type": "linear",
+    "eps_start": 1.00,
+    "eps_end": 0.02,
+    "eps_decay_frac": 0.6,
+    "T_tgt_update": 125, 
+    "num_succ_update": 1,
+    "max_step_per_epi": 28,
+    "T_exploration": 50,
+    "grad_clip": 5.0,
+    "n_steps": 1,
+    "T_total": 50000
+}

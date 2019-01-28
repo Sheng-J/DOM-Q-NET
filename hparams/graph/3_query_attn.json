@@ -1,0 +1,4 @@
+{
+    "n_prop_steps": 3,
+    "aggr_type": "query_attn"
+}

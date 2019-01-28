@@ -1,0 +1,6 @@
+{
+    "batch_size": 32,
+    "lr": 0.002,
+    "Epoch_total": 200,
+    "num_neg_sample": 3
+}

@@ -1,0 +1,11 @@
+{
+    "max_tag_vocab_size": 40,
+    "max_text_vocab_size": 400,
+    "max_class_vocab_size": 40,
+    "E_tag_dim": 8,
+    "E_text_dim": 32,
+    "E_class_dim": 8,
+    "fc_dim": 128,
+    "allow_unk": false,
+    "allow_text_unk": true
+}

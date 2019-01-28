@@ -1,0 +1,8 @@
+{
+    "capacity": 10000,
+    "alpha": 0.0,
+    "beta0": 0.4,
+    "beta_anneal_frac": 1.0,
+    "prioritized_eps": 1e-6,
+    "replay_type": "td_err_prioritized"
+}

@@ -1,0 +1,14 @@
+{
+    "opt_type": "adam",
+    "lr": 0.0001,
+    "batch_size": 128,
+    "gamma": 0.99,
+    "T_tgt_update": 200, 
+    "T_update": 1,
+    "max_step_per_epi": 22,
+    "T_exploration": 50,
+    "grad_clip": 2.5,
+    "n_steps": 8, 
+    "T_total": 350000,
+    "use_noisylayers": true
+}

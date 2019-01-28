@@ -1,0 +1,4 @@
+{
+    "max_text_vocab_size": 400,
+    "E_text_dim": 32
+}

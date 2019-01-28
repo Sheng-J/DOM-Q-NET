@@ -1,0 +1,13 @@
+{
+    "plot_path1": "compare/social_media",
+    "plot_path2": "compare/search_engine",
+    "plot_path3": "compare/navigate_tree",
+    "plot_path4": "compare/click_tab2",
+    "plot_path5": "compare/login_user",
+    "plot_path6": "compare/enter_text",
+    "plot_path7": "compare/enter_password",
+    "plot_path8": "compare/email_inbox_delete",
+    "plot_path9": "compare/click_option",
+    "plot_path10": "compare/click_checkboxes",
+    "plot_path11": "compare/enter_text_dynamic"
+}

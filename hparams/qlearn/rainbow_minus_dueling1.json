@@ -1,0 +1,18 @@
+{
+    "opt_type": "adam",
+    "lr": 0.0002,
+    "batch_size": 64,
+    "gamma": 0.99,
+    "T_tgt_update": 125, 
+    "T_update": 1,
+    "max_step_per_epi": 40,
+    "T_exploration": 50,
+    "grad_clip": 5.0,
+    "n_steps": 6, 
+    "T_total": 1000000,
+    "use_noisylayers": true,
+    "use_c51": true,
+    "num_atoms": 21,
+    "V_min": 0.0,
+    "V_max": 1.0
+}

@@ -1,0 +1,28 @@
+{
+    "opt_type": "adam",
+    "lr": 0.0001,
+    "batch_size": 512,
+    "gamma": 0.99,
+    "T_tgt_update": 175, 
+    "T_update": 1,
+    "max_step_per_epi": 22,
+    "T_exploration": 50,
+    "grad_clip": 5.0,
+    "n_steps": 6, 
+    "T_total": 1000000,
+    "use_noisylayers": true
+}
+{
+    "opt_type": "adam",
+    "lr": 0.0002,
+    "batch_size": 128,
+    "gamma": 0.99,
+    "T_tgt_update": 125, 
+    "T_update": 1,
+    "max_step_per_epi": 40,
+    "T_exploration": 50,
+    "grad_clip": 5.0,
+    "n_steps": 6, 
+    "T_total": 1000000,
+    "use_noisylayers": true
+}
