@@ -1,3 +1,4 @@
+Code for DOM-Q-NET: Grounded RL on structured language https://openreview.net/pdf?id=HJgd1nAqFX <br />
 Complete documentation will be updated soon.. <br />
 MiniWob Environment will be updated as a pip package.  <br />
 plp preprocessing tool will also be updated as a pip package.   <br />
