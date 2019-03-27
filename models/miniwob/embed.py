@@ -2,7 +2,6 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
-from plp.utils.torch_wrap import batch_pad_
 from algorithms.encodings import position_encoding_init
 from models.attention import scaled_dot_attn
 import ipdb
@@ -228,4 +227,17 @@ class DomLeavesEmbedding(nn.Module):
 
 
 
+
+def batch_pad_(batch_tokens, pad_token, device, max_num_tokens=None):
+    """
+    In-place
+    """
+    if max_num_tokens is None:
+        max_num_tokens = max(len(sub_tokens) for sub_tokens in batch_tokens)
+    mask = torch.ones(len(batch_tokens), max_num_tokens, device=device)
+    for sub_tokens, submask in zip(batch_tokens, mask):
+        if len(sub_tokens) < max_num_tokens:
+            submask[len(sub_tokens):max_num_tokens] = 0.
+            sub_tokens.extend([pad_token]*(max_num_tokens - len(sub_tokens)))
+    return mask
 

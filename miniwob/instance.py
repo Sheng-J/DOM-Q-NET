@@ -30,10 +30,11 @@ class MiniWoBInstance:
 
     def __init__(
             self, task_file,
-            base_url='file:///h/sheng/DOM-Q-NET/miniwob/html/miniwob/',
+            base_url=os.getenv("WOB_PATH"),
             wait_ms=0., block_on_reset=True, refresh_freq=0
             ):
         """
+        E.g. base_url='file:///h/sheng/DOM-Q-NET/miniwob/html/miniwob/',
         Args:
             wait_ms: pause the instance after each action for this ms 
             block_on_reset: On reset, block until the page loads

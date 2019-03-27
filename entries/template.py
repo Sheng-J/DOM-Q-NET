@@ -1,7 +1,7 @@
 import os
 import torch
 import torch.nn as nn
-import plp.vocab as pvocab
+from utils.vocab import LazyVocab
 import configs
 from models.miniwob.embed import DomLeavesEmbedding
 from miniwob.env import MiniWoBEnvironment
@@ -17,15 +17,15 @@ import numpy as np
 
 def create_build_f(nn_hs, qlearn_hs, other_hs, prints_dict, ckpt_path=None, V_text=None, V_tag=None, V_class=None):
     if V_tag is None:
-        V_tag = pvocab.LazyVocab("tag", nn_hs["max_tag_vocab_size"], nn_hs["allow_unk"])
+        V_tag = LazyVocab("tag", nn_hs["max_tag_vocab_size"], nn_hs["allow_unk"])
     if V_text is None:
         if ckpt_path is not None:
             pretrain_ckpt = torch.load(ckpt_path)
             V_text = pretrain_ckpt["V_text"]
         else:
-            V_text = pvocab.LazyVocab("text", nn_hs["max_text_vocab_size"], nn_hs["allow_text_unk"])
+            V_text = LazyVocab("text", nn_hs["max_text_vocab_size"], nn_hs["allow_text_unk"])
     if V_class is None:
-        V_class = pvocab.LazyVocab("class", nn_hs["max_class_vocab_size"], nn_hs["allow_unk"])
+        V_class = LazyVocab("class", nn_hs["max_class_vocab_size"], nn_hs["allow_unk"])
     def build_net_f(buffer_device, batch_device):
         ##
         # Attr Embeddings construction

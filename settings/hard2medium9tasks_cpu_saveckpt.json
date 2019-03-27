@@ -1,0 +1,16 @@
+{
+    "env": ["social-media", "search-engine", "navigate-tree", "click-tab-2",
+            "login-user", "enter-text", "enter-password", "email-inbox-delete",
+            "click-option", "click-checkboxes", "enter-text-dynamic"
+            ],
+    "T_ckpt": 5000,
+    "save_ckpt": true,
+    "io_T": 50,
+    "print_last_n_avg": 100,
+    "export_T": 1000000,
+    "multi_env": true,
+    "T_replay_track": 200,
+    "buffer_device": "cpu:0",
+    "batch_device": "cuda:0",
+    "err_T_track": 100
+}
