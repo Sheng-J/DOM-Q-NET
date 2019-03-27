@@ -1,5 +1,4 @@
 # DOM-Q-NET: Grounded RL on Structured Language
-Code for DOM-Q-NET: Grounded RL on structured language https://openreview.net/pdf?id=HJgd1nAqFX <br /> (Documentation will be continuously updated.) <br />
 > "DOM-Q-NET: Grounded RL on Structured Language" _International Conference on Learning Representations_ (2019). Sheng Jia, Jamie Kiros, Jimmy Ba. 
 > [[arxiv]](https://arxiv.org/abs/1902.07257) [[openreview]](https://openreview.net/forum?id=HJgd1nAqFX) <br />
 
