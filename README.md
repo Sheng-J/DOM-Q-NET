@@ -3,7 +3,7 @@
 > [[arxiv]](https://arxiv.org/abs/1902.07257) [[openreview]](https://openreview.net/forum?id=HJgd1nAqFX) <br />
 
 # Requirement
-Need to download selenium & install chrome plugin...
+Need to download selenium & install chrome driver for selenium..
 
 # Installation
 1. Clone this repo
