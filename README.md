@@ -1,7 +1,11 @@
 # DOM-Q-NET: Grounded RL on Structured Language
 > "DOM-Q-NET: Grounded RL on Structured Language" _International Conference on Learning Representations_ (2019). Sheng Jia, Jamie Kiros, Jimmy Ba. 
 > [[arxiv]](https://arxiv.org/abs/1902.07257) [[openreview]](https://openreview.net/forum?id=HJgd1nAqFX) <br />
+# Demo
+Trained multitask agent: https://www.youtube.com/watch?v=eGzTDIvX4IY
 
+# Requirement
+Need to download selenium & install chrome driver for selenium..
 
 # Installation
 1. Clone this repo
