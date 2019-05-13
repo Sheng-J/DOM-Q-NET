@@ -9,11 +9,12 @@ import collections
 #import entries.q_eval.entry as q_eval_entry
 #import entries.playground.entry as playground_entry
 import entries.official.entry as official_entry
-#import entries.demo.entry as demo_entry
+import entries.demo.entry as demo_entry
 
 
 ENTRY_LOOKUP = {
         "official": official_entry.main,
+        "demo": demo_entry.main
         }
 
 
