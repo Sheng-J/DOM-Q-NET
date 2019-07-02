@@ -13,7 +13,8 @@ Need to download selenium & install chrome driver for selenium..
 and copy miniwob-plusplus/html folder to miniwob/html in this repo <br />
 3. In fact, this html folder could be stored anywhere, but remember to perform one of the following actions: <br />
 > * Set environment variable `"WOB_PATH"` to <br />
-`"your-path-to-miniwob-plusplus"/html/miniwob` <br />
+`file://"your-path-to-miniwob-plusplus"/html/miniwob` <br />
+E.g. "your-path-to-miniwob-plusplus" is "/h/sheng/DOM-Q-NET/miniwob
 > * Directly modify the `base_url` on line 33 of instance.py to  <br />
 "your-path-to-miniwob-plusplus"/html/miniwob <br />
 In my case, `base_url='file:///h/sheng/DOM-Q-NET/miniwob/html/miniwob/'` <br />
