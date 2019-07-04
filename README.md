@@ -27,7 +27,7 @@ sh run1.sh
 ```
 will launch a 11 multi-task (`social-media` `search-engine` `login-user` `enter-password` `click-checkboxes` `click-option` `enter-dynamic-text` `enter-text` `email-inbox-delete` `click-tab-2` `navigation-tree`) experiment.
 
-# Multitask Assumptions:
+# Multitask Assumptions
 
 ##  State & Action restrictions
 | Item | Maximum number of items |
