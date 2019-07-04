@@ -27,5 +27,24 @@ sh run1.sh
 ```
 will launch a 11 multi-task (`social-media` `search-engine` `login-user` `enter-password` `click-checkboxes` `click-option` `enter-dynamic-text` `enter-text` `email-inbox-delete` `click-tab-2` `navigation-tree`) experiment.
 
+# Multitask Assumptions:
+
+##  State & Action restrictions
+| Item | Maximum number of items |
+| ------ | ----------- |
+| DOM tree leaves (action space)   | `160` |
+| DOM tree |`200`  |
+| Instruction tokens    | `16` |
+
+## Attribute embeddings & vocabulary
+| Attribute | max vocabulary | Embedding dimension
+| ------ | ----------- |----------- |
+| Tag   | `100` | `16` |  
+| Text (shared with instructions) |`600`  |`48`|
+| Class    | `100` | `16` |
+
+> * UNKnown tokens <br />
+These are assigned to a random vector such that the cosine distance with the text attribute can yield 1.0 for the direct alignment.
+
 # Acknowledgement
 Credit to Dopamine for the implementation of prioritized replay used in dstructs/dopamine_segtree.py   <br />
