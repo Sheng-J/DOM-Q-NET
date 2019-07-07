@@ -1,0 +1,5 @@
+{
+    "plot_path1": "compare/login_user",
+    "plot_path2": "compare/enter_text",
+    "plot_path3": "compare/enter_password"
+}
